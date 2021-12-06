@@ -34,7 +34,7 @@ const createElement = el => {
   return ingredientElement;
 };
 const elements = ingredients.map(createElement);
-ingredientsRef.append(...elements);
+ingredientsRef.append(...elements); /* этот вариант  */
 
 /* const ulEl = document.querySelector('#ingredients');
 const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
