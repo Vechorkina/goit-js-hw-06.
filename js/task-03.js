@@ -28,3 +28,11 @@ const images = [
 ];
 
 
+const galleryList = document.querySelector(".gallery");
+const markup = images
+.map((image => `<li><img width = 300 alt="${image.alt}" src="${image.url}"></li>`))
+.join("");
+galleryList.insertAdjacentHTML('beforebegin', markup);
+
+
+

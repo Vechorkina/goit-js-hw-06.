@@ -26,7 +26,7 @@ const ingredients = [
   'Condiments',
 ];
 
-
+/* 
 const ingredientsRef = document.querySelector('#ingredients');
 const createElement = el => {
   const ingredientElement = document.createElement('li');
@@ -34,7 +34,23 @@ const createElement = el => {
   return ingredientElement;
 };
 const elements = ingredients.map(createElement);
-ingredientsRef.append(...elements); /* этот вариант  */
+ingredientsRef.append(...elements); */
+ /* этот вариант  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* const ulEl = document.querySelector('#ingredients');
 const list = ingredients.reduce((str, item) => str + `<li>${item}</li>`, '');
