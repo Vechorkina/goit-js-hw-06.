@@ -12,19 +12,29 @@ function getRandomHexColor() {
 } */
 
 
-function getRandomHexColor() {
+ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
+const btn = document.querySelector(".change-color");
+const changeColor = document.querySelector(".color");
+btn.addEventListener("click", () => {
+ const color = getRandomHexColor();
+ document.body.style.backgroundColor = color;
+ changeColor.textContent = color;
+}); 
 
+/* ПРЕДЫДУЩИЙ ВАРИАНТ
 const refs = {
   btn: document.querySelector( '.change-color' ),
   body: document.querySelector( "[data-color='cheng']" ),
   textColor:document.querySelector( '.color' )
 }
-
 refs.btn.addEventListener( 'click', onColorClick )
-
 function onColorClick ( e ) {
   refs.body.style.backgroundColor = getRandomHexColor()
   refs.textColor.textContent = getRandomHexColor()
 }
+ */
+
+
+
